@@ -177,37 +177,75 @@
 
     <!--------------------------------------------Portfolio End------------------------------------------------->
 
-    
     <!--------------------------------------------Footer Start------------------------------------------------->
 
     <footer id="footer">
       <div class="container">
         <div class="qute">
-          <h1>Let's Connect</h1>
+          <h1>Have A project</h1>
         </div>
         <div class="container-grid">
+          <div class="contact-form" id="contact">
+            <form action="submit_form.php" method="POST">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                id="emailmessagename"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="8"
+                required
+                id="emailmessagebody"
+              ></textarea>
+              <a type="submit" class="btn" onclick="emailBtnClicked()">Send</a>
+            </form>
+          </div>
           <div class="social-links">
-            <i class="fa-brands fa-facebook"
-              ><a href="#" class="social-link"></a
-            ></i>
-            <i class="fa-brands fa-twitter"
-              ><a href="#" class="social-link"></a
-            ></i>
-            <i class="fa-brands fa-linkedin"
-              ><a href="#" class="social-link"></a
-            ></i>
-            <i class="fa-brands fa-github"
-              ><a href="#" class="social-link"></a
-            ></i>
-            <i class="fa-brands fa-instagram"
-              ><a href="#" class="social-link"></a
-            ></i>
+            <a
+              href="https://www.facebook.com/profile.php?id=100031116935428"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rtiwari0/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rudra-tiwari-219bb722b/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://discord.com/channels/@me/1294934053941678101"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              href="https://github.com/rudra-t"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
-        <p>Copyright 2024 @ Rudra Tiwari: All Rights Reserverd</p>
       </div>
+      <p>Copyright 2024 @ Rudra Tiwari: All Rights Reserverd</p>
     </footer>
-   
+
     <!--------------------------------------------Footer End------------------------------------------------->
 
     <!--------------------------------------------Java-Script Start------------------------------------------------->

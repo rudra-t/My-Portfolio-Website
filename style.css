@@ -459,6 +459,8 @@ nav .container {
 }
 
 .container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   text-align: center;
   justify-content: center;
   align-items: end;
@@ -467,7 +469,6 @@ nav .container {
 .qute {
   width: 70%;
   letter-spacing: 3px;
-  z-index: 1;
   margin: 0 auto;
   background-color: var(--second-background-color);
 }
@@ -478,17 +479,17 @@ nav .container {
   font-size: 3rem;
 }
 .social-links {
-  color: var(--second-text-color);
   width: 100%;
 }
 
-.social-links i {
-  font-size: 3rem;
+.social-links a {
+  font-size: 2.5rem;
+  margin: 20px;
   border-radius: 10px;
-  margin: 30px;
+  color: var(--second-text-color);
 }
 
-.social-links i:hover{
+.social-links a:hover{
   background: var(--background);
   color: transparent;
   background-clip: text;
@@ -532,8 +533,11 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  #footer .container{
+  #footer .container-grid{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .social-links {
+    margin-top: 20px;
   }
 }
 
